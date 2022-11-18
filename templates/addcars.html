@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Cars</title>
+    <script src="../static/bootstrap/js/jquery-3.4.0.js"></script>
+    <script src="../static/bootstrap/js/popper.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+
+    <style>
+        body{
+            background-image: url("../static/img/mountain.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+   <div class="row">
+           <div class="col-4 align-content-md-center "></div>
+           <div class="col-4 align-content-md-center">
+                   <h1 class="text-dark text-center">Register Car</h1>
+                   <form method="POST">
+                       <input class="form-control" name="make" placeholder="Car Make" type="text"><br>
+                       <input class="form-control" name="model" placeholder="Car Model" type="text"><br>
+                       <input class="form-control" name="yom" placeholder="Car YOM" type="number"><br>
+                       <input class="form-control" name="price" placeholder="Car Price" type="number"><br>
+                       <input class="form-control" name="power" placeholder="Car Power" type="number"><br>
+                       <input class="btn btn-dark btn-block mb-2 " name="btn_reg" value="Add Car" type="submit">
+                       <a class="btn btn-outline-dark btn-block" href="/cars">View Cars</a>
+                       <a class="btn btn-outline-danger btn-block" href="/home">Back to Home</a>
+                   </form>
+           </div>
+       </div>
+</body>
+</html>

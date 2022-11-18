@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Cars</title>
+    <script src="../static/bootstrap/js/jquery-3.4.0.js"></script>
+    <script src="../static/bootstrap/js/popper.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+
+    <style>
+        body{
+            background-image: url("../static/img/mountain.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+   <div class="row">
+           <div class="col-4 align-content-md-center "></div>
+           <div class="col-4 align-content-md-center">
+                   <h1 class="text-info text-center">Register Car</h1>
+                   <form method="post">
+                       <input value="{{ car.make }}" class="form-control" name="u_make" placeholder="Car Make" type="text"><br>
+                       <input value="{{ car.model }}" class="form-control" name="u_model" placeholder="Car Model" type="text"><br>
+                       <input value="{{ car.yom }}"  class="form-control" name="u_yom" placeholder="Car YOM" type="number"><br>
+                       <input value="{{ car.price }}"  class="form-control" name="u_price" placeholder="Car Price" type="number"><br>
+                       <input value="{{ car.power }}" class="form-control" name="u_power" placeholder="Car Power" type="number"><br>
+                       <input class="btn btn-outline-light btn-block mb-2" name="btn-update" value="Add cars" type="submit">
+                       <a class="btn btn-outline-danger btn-block" href="/cars">Update Bikes</a>
+                   </form>
+           </div>
+       </div>
+</body>
+</html>

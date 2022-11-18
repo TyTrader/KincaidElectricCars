@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <script src="../static/bootstrap/js/jquery-3.4.0.js"></script>
+    <script src="../static/bootstrap/js/popper.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+
+    <style>
+        body{
+            background-image: url("../static/img/Electrobike.jpg");
+            background-repeat: no-repeat ;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+    </style>
+</head>
+<body>
+  <section>
+       <div class="row">
+           <div class="col-4 align-content-md-center "></div>
+           <div class="col-4 align-content-md-center">
+                   <h1 class="text-info text-center">Register Here</h1>
+                   {% for message in get_flashed_messages() %}
+                       <p class="text-success text-center">{{ message }}</p>
+                   {% endfor %}
+                   <form method="post">
+                       <input class="form-control" name="u_name" placeholder="Enter Name" type="text"><br>
+                       <input class="form-control" name="u_email" placeholder="Enter Email" type="text"><br>
+                       <input class="form-control" name="u_password" placeholder="Enter Password" type="password"><br>
+                       <input class="btn btn-outline-info" name="btn_reg" value="Register" type="Submit">
+                       <a class="btn btn-link" href="/login">Already have an Account? Login</a>
+
+                   </form>
+           </div>
+       </div>
+   </section>
+</body>
+</html>

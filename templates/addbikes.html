@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Bikes</title>
+    <script src="../static/bootstrap/js/jquery-3.4.0.js"></script>
+    <script src="../static/bootstrap/js/popper.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+
+    <style>
+        body{
+            background-image: url("../static/img/forest.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+   <div class="row">
+           <div class="col-4 align-content-md-center "></div>
+           <div class="col-4 align-content-md-center">
+                   <h1 class="text-danger text-center">Register Bike</h1 >
+                   <form method="POST">
+                       <input class="form-control" name="make" placeholder="Bike Make" type="text"><br>
+                       <input class="form-control" name="model" placeholder="Bike Model" type="text"><br>
+                       <input class="form-control" name="yom" placeholder="Bike YOM" type="text"><br>
+                       <input class="form-control" name="price" placeholder="Bike Price" type="text"><br>
+                       <input class="form-control" name="power" placeholder="Bike Power" type="text"><br>
+                       <input class="btn btn-danger mb-2 btn-block" name="btn_reg" value="Add Bike" type="submit">
+                       <a class="btn btn-outline-danger btn-block" href="/bikes">View Bikes</a>
+                       <a class="btn btn-outline-danger btn-block" href="/home">Back to Home</a>
+
+                   </form>
+           </div>
+       </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <script src="../static/bootstrap/js/jquery-3.4.0.js"></script>
+    <script src="../static/bootstrap/js/popper.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+
+    <style>
+        body{
+            background-image: url("../static/img/sky.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .vertical-align {
+            letter-spacing: -4px;
+            font-size: 0;
+        }
+
+        .vertical-align .col-xs-4 {
+            vertical-align: middle;
+            display: inline-block;
+            letter-spacing: 0;
+            font-size: 14px;
+            float: none;
+        }
+        .jumbotron{
+            background-image: url("../static/img/sky.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+  <header>
+      <h1>Kincaid Motors</h1>
+  </header>
+  <section>
+      <!--<div>
+          <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+             <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                 <a class="nav-link" href="/home">Home</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="/about">About</a>
+               </li>
+             </ul>
+             <ul class="navbar-nav bg-light">
+                 <a class="navbar-brand" href="/home"></a>
+                 <img class="bg-light align-middle" src="../static/img/Storm-Lion.jpg" alt="Site Logo" width="50px" height="50px">
+             </ul>
+             <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                 <a class="nav-link" href="/login">Gallery</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="/signup">Logout</a>
+               </li>
+             </ul>
+          </nav>
+      </div> -->
+  </section>
+
+
+  <section>
+      <div class="container-fluid">
+        <div class="jumbotron">
+            <div class="row vertical-align justify-content-around">
+                <div class="col-xs-4">
+                    <a href="/addbikes"><img src="../static/img/Electrobike.jpg " class="shadow p-3 mb-5 bg-white rounded img-responsive img-rounded" height="300px" width="300px" alt="Bikes"></a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="/addcars"><img src="../static/img/Tesla.jpg" class="img-responsive img-rounded shadow p-3 mb-5 bg-white rounded" height="300px" width="300px" alt="Cars"></a>
+                </div>
+                <div class=" col-xs-4">
+                    <a href="/addtrucks"><img src="../static/img/Hummer.jpg" class="img-responsive img-rounded shadow p-3 mb-5 bg-white rounded" height="300px" width="300px" alt="Trucks"></a>
+                </div>
+            </div>
+        </div>
+      </div>
+  </section>
+
+<section>
+      <div class="jumbotron-fluid d-flex justify-content-center">
+         <p class="font-italic font-weight-bold>Welcome to the Kincaid Motors Kindly register your vehicles <br>
+          so that we can match you to your fellow enthusiasts.</p>
+      </div>
+</section>
+
+<section>
+    <footer>
+
+    </footer>
+</section>
+</body>
+</html>

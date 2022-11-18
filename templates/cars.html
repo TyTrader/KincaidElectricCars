@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Available cars</title>
+    <script src="../static/bootstrap/js/jquery-3.4.0.js"></script>
+    <script src="../static/bootstrap/js/popper.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+
+    <style>
+        body{
+            background-image: url("../static/img/mountain.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+  <div class="row">
+           <div class="col-3"></div>
+           <div class="col-6">
+                   <h1 class="text-dark text-center">Electric Cars Available</h1>
+                   <table class="table table-hover">
+                       <thead>
+                         <tr>
+                             <th>Car Make</th>
+                             <th>Car Model</th>
+                             <th>Car yom</th>
+                             <th>Car Price</th>
+                             <th>Car Power</th>
+                             <th>Update</th>
+                             <th>Delete</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         {% for car in Cars %}
+                        <tr>
+                            <td>{{ car.make }}</td>
+                            <td>{{ car.model }}</td>
+                            <td>{{ car.make }}</td>
+                            <td>{{ car.price }}</td>
+                            <td>{{ car.power }}</td>
+                            <td><a class="btn btn-outline-dark" href="delete/{{ car.id }}">Delete</a></td>
+                            <td><a class="btn btn-outline-dark" href="update/{{ car.id }}">Update</a></td>
+                        </tr>
+                         {% endfor %}
+                       </tbody>
+                   </table>
+               </div>
+           <div class="col-3"></div>
+       </div>
+</body>
+</html>

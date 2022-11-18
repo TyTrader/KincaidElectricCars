@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Trucks</title>
+    <script src="../static/bootstrap/js/jquery-3.4.0.js"></script>
+    <script src="../static/bootstrap/js/popper.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+
+    <style>
+        body{
+            background-image: url("../static/img/Road.jpg");
+            background-size:cover;
+            background-repeat: no-repeat ;
+            background-attachment: fixed;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="row">
+           <div class="col-4 align-content-md-center "></div>
+           <div class="col-4 align-content-md-center">
+                   <h1 class="text-success text-center">Register Truck</h1>
+                   <form method="POST">
+                       <input class="form-control" name="make" placeholder="Truck Make" type="text"><br>
+                       <input class="form-control" name="model" placeholder="Truck Model" type="text"><br>
+                       <input class="form-control" name="truck" placeholder="Truck YOM" type="number"><br>
+                       <input class="form-control" name="price" placeholder="Truck Price" type="number"><br>
+                       <input class="form-control" name="power" placeholder="Truck Power" type="number"><br>
+                       <input class="btn btn-success btn-block mb-2" name="btn_reg" href="" value="Add Truck" type="submit">
+                       <a class="btn btn-outline-success btn-block" href="/trucks">View Trucks</a>
+                       <a class="btn btn-outline-danger btn-block" href="/home">Back to Home</a>
+                   </form>
+           </div>
+       </div>
+</body>
+</html>
